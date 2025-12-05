@@ -1,0 +1,89 @@
+/* Base styles */
+body {
+    font-family: "Roboto", Arial, sans-serif;
+    background-color: #f5f3ed;
+}
+
+#content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 3em 1.5em;
+    line-height: 1.6em;
+}
+
+#content h1 {
+    text-decoration: underline solid #eb4634;
+}
+
+#content p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Navbar */
+#navbar {
+    margin: 1em 0 0 1em;
+}
+
+#navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+#navbar li {
+    display: inline-block;
+    margin-right: 20px;
+    font-size: 20px;
+}
+
+#navbar a {
+    color: #a97b25;
+}
+
+/* Tileset */
+#tileset {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+#tileset .tile {
+    flex: 1 1 calc(33.33% - 20px); /* 3 per row */
+    box-sizing: border-box;
+}
+
+/* Tile links */
+.tile h2 a,
+.tile p a {
+    color: #000;
+}
+
+/* Project-specific link underlines */
+#project1 a,
+#project1 p a { text-decoration: underline solid #6394c5; }
+
+#project2 a,
+#project2 p a { text-decoration: underline solid #ebab34; }
+
+#project3 a,
+#project3 p a { text-decoration: underline solid #32a852; }
+
+#project4 a,
+#project4 p a { text-decoration: underline solid #a73b75; }
+
+#project5 a,
+#project5 p a { text-decoration: underline solid #6d28b7; }
+
+/* Responsive styles */
+@media only screen and (max-width: 600px) {
+    #content {
+        max-width: 700px;
+        padding: 3em 1.5em;
+    }
+
+    #tileset .tile {
+        flex: 1 1 100%; /* full width */
+    }
+}
